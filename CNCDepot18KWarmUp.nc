@@ -1,4 +1,4 @@
-( Author: Carl Slater)
+( Author: Carl Slater )
 ( Github: https://github.com/ShamanTcler/Masso-GCode )
 ( License: GPL 2 )
 ( Date: 1-8-2024)
