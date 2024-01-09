@@ -19,10 +19,10 @@ G20 G90 G17 G80 G40 G49
 (Work offset: G54)
 G54
 
-(MSG Spindle Break In, hit cycle start)
+MSG Spindle Break In, hit cycle start
 (require cycle start to continue)
-(M01)
-(G04 S5)
+M01
+G04 P5000
 
 
 
@@ -34,37 +34,37 @@ G54
 (25 percent of 18000 is 4500, turn on spindle)
 S4500 M03 
 (Dwell 60 seconds)
-G04 X60
+G04 P60000
 (Stop spindle)
 M05
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 
 (Count 2)
 S4500 M03 
-G04 X60
+G04 P60000
 M05
-G04 X120
+G04 P120000
 
 (Count 3)
 S4500 M03 
-G04 X60
+G04 P60000
 M05
-G04 X120
+G04 P120000
 
 (Count 4)
 S4500 M03 
-G04 X60
+G04 P60000
 M05
-G04 X120
+G04 P120000
 
 (Count 5)
 S4500 M03 
-G04 X60
+G04 P60000
 M05
-G04 X120
+G04 P120000
 
-(MSG 10% completed)
+MSG 10% completed
 
 
 ( 4. Run the spindle to 50% of maximum speed for 2 minute)
@@ -76,37 +76,37 @@ G04 X120
 (50 percent of 18000 is 9000, turn on spindle)
 S9000 M03 
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 (Stop spindle)
 M05
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 
 (Count 2)
 S9000 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
 (Count 3)
 S9000 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
 (Count 4)
 S9000 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
 (Count 5)
 S9000 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
-(MSG 25% completed)
+MSG 25% completed
 
 ( 7. Run the spindle to 75% of maximum speed for 1 minute)
 ( 8. Stop the spindle and allow to sit for 2 minutes)
@@ -117,37 +117,37 @@ G04 X120
 (75 percent of 18000 is 13500, turn on spindle)
 S13500 M03 
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 (Stop spindle)
 M05
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 
 (Count 2)
 S13500 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
 (Count 3)
 S13500 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
 (Count 4)
 S13500 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
 (Count 5)
 S13500 M03 
-G04 X120
+G04 P120000
 M05
-G04 X120
+G04 P120000
 
-(MSG 35% completed)
+MSG 35% completed
 
 
 ( 10. Run the spindle to 50% of maximum speed for 1 minute )
@@ -158,25 +158,25 @@ G04 X120
 (50 percent of 18000 is 9000, turn on spindle)
 S9000 M03 
 (Dwell 120 seconds)
-G04 X60
+G04 P60000
 (Stop spindle)
 M05
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 
 (Count 2)
 S9000 M03 
-G04 X60
+G04 P60000
 M05
-G04 X120
+G04 P120000
 
 (Count 3)
 S9000 M03 
-G04 X60
+G04 P60000
 M05
-G04 X120
+G04 P120000
 
-(MSG 41% completed, next phase long)
+MSG 41% completed, next phase long
 (G04 S5)
 
 ( 13. Run the spindle to 75% of maximum speed for 30 minutes )
@@ -188,19 +188,19 @@ G04 X120
 (75 percent of 18000 is 13500, turn on spindle)
 S13500 M03 
 (Dwell 120 seconds)
-G04 X1800
+G04 P1800000
 (Stop spindle)
 M05
 (Dwell 120 seconds)
-G04 X300
+G04 P300000
 
 (Count 2)
 S13500 M03 
-G04 X1800
+G04 P1800000
 M05
-G04 X300
+G04 P300000
 
-(MSG 90% completed)
+MSG 90% completed
 
 
 ( 16. Run the spindle to 75% of maximum speed for 5 minutes )
@@ -210,18 +210,18 @@ G04 X300
 (Count 1)
 (75 percent of 18000 is 13500, turn on spindle)
 S13500 M03 
-(Dwell 120 seconds)
-G04 X300
+(Dwell 300 seconds)
+G04 P300000
 (Stop spindle)
 M05
 (Dwell 120 seconds)
-G04 X120
+G04 P120000
 
 (Count 2)
 S13500 M03 
-G04 X300
+G04 P300000
 M05
-G04 X120
+G04 P120000
 
 
 (end the program)

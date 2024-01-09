@@ -30,12 +30,12 @@ G54
 ( 2. Stop the spindle for 1 min )
 (25 percent of 18000 is 4500, turn on spindle)
 S4500 M03 
-(Dwell 60 seconds)
-G04 X180
+(Dwell 180 seconds)
+G04 P180000
 ( Stop spindle)
 M05
-(Dwell 120 seconds)
-G04 X120
+(Dwell 60 seconds)
+G04 P60000
 
 (MSG 28% complete)
 
@@ -45,11 +45,11 @@ G04 X120
 (50 percent of 18000 is 9000, turn on spindle)
 S9000 M03 
 (Dwell 240 seconds)
-G04 X240
+G04 P240000
 (Stop spindle)
 M05
 (Dwell 60 seconds)
-G04 X60
+G04 P60000
 
 (MSG 64% complete)
 
@@ -58,11 +58,11 @@ G04 X60
 (75 percent of 18000 is 13500, turn on spindle)
 S13500 M03 
 (Dwell 240 seconds)
-G04 240
+G04 P240000
 (Stop spindle)
 M05
 (Dwell 60 seconds)
-G04 60
+G04 P60000
 
 (end the program)
 M30
