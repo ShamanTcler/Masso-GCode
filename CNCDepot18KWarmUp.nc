@@ -23,7 +23,7 @@ G54
 (MSG Spindle Warm Up, hit cycle start)
 (require cycle start to continue)
 (M01)
-(G04 S5)
+
 
 
 ( 1. Run the spindle to 25% max speed for 3 minutes)
@@ -37,7 +37,7 @@ M05
 (Dwell 60 seconds)
 G04 P60000
 
-(MSG 28% complete)
+MSG 28 perc complete
 
 
 ( 3. Run the spindle to 50% max speed for 4 minutes)
@@ -51,7 +51,7 @@ M05
 (Dwell 60 seconds)
 G04 P60000
 
-(MSG 64% complete)
+MSG 64 perc complete
 
 ( 5. Run the spindle to 75% max speed for 4 minutes )
 ( 6. Stop the spindle for 1 min)

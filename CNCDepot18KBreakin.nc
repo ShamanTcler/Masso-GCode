@@ -22,9 +22,6 @@ G54
 MSG Spindle Break In, hit cycle start
 (require cycle start to continue)
 M01
-G04 P5000
-
-
 
  (1. Run the spindle to 25% of maximum speed for 1 minute)
  (2. Stop the spindle and allow to sit for 2 minutes)
@@ -106,7 +103,7 @@ G04 P120000
 M05
 G04 P120000
 
-MSG 25% completed
+MSG 25 perc completed
 
 ( 7. Run the spindle to 75% of maximum speed for 1 minute)
 ( 8. Stop the spindle and allow to sit for 2 minutes)
@@ -147,7 +144,7 @@ G04 P120000
 M05
 G04 P120000
 
-MSG 35% completed
+MSG 35 perc completed
 
 
 ( 10. Run the spindle to 50% of maximum speed for 1 minute )
@@ -176,8 +173,7 @@ G04 P60000
 M05
 G04 P120000
 
-MSG 41% completed, next phase long
-(G04 S5)
+MSG 41 perc completed,next phase long
 
 ( 13. Run the spindle to 75% of maximum speed for 30 minutes )
 ( 14. Stop the spindle and allow to sit for 5 minutes )
@@ -200,7 +196,7 @@ G04 P1800000
 M05
 G04 P300000
 
-MSG 90% completed
+MSG 90 perc completed
 
 
 ( 16. Run the spindle to 75% of maximum speed for 5 minutes )
