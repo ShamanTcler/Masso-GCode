@@ -219,6 +219,7 @@ G04 P300000
 M05
 G04 P120000
 
+MSG Spindle break in completed
 
 (end the program)
 M30

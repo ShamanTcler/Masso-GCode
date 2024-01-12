@@ -20,10 +20,7 @@ G20 G90 G17 G80 G40 G49
 (Work offset: G54)
 G54
 
-(MSG Spindle Warm Up, hit cycle start)
-(require cycle start to continue)
-(M01)
-
+MSG Spindle Warm Up, hit cycle start
 
 
 ( 1. Run the spindle to 25% max speed for 3 minutes)
@@ -37,7 +34,7 @@ M05
 (Dwell 60 seconds)
 G04 P60000
 
-MSG 28 perc complete
+MSG 28 percent complete
 
 
 ( 3. Run the spindle to 50% max speed for 4 minutes)
@@ -51,7 +48,7 @@ M05
 (Dwell 60 seconds)
 G04 P60000
 
-MSG 64 perc complete
+MSG 64 percent complete
 
 ( 5. Run the spindle to 75% max speed for 4 minutes )
 ( 6. Stop the spindle for 1 min)
@@ -63,6 +60,8 @@ G04 P240000
 M05
 (Dwell 60 seconds)
 G04 P60000
+
+MSG 64 Spindle warm up complete
 
 (end the program)
 M30
